@@ -9,11 +9,11 @@
     object-position: center;
     object-fit: cover;
 }
-
+/*
 .col-md-4 , .col-xl-4 {
-    padding: 1px;
+    padding: 0;
 }
-
+*/
 .modal .modal-body svg {
     width: 30px;
     height: 30px;
