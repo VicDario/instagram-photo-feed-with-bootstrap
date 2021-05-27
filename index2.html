@@ -14,30 +14,34 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fab fa-instagram text-secondary"></i>Instagram</a>
-        </div>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-            <button class="btn btn-primary bg-success" type="submit" data-bs-toggle="modal"
-                data-bs-target="#newPostModal">Create
-                new post</button>
-            <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-cog"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Log Out</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <i class="fab fa-instagram"></i> Instagram</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newPostModal">Create new
+                    post</button>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cog"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <ul class="nav justify-content-center bg-light border-bottom">
@@ -53,36 +57,207 @@
         </li>
     </ul>
 
-    <div class="container bg-light">
+    <div class="container feed">
         <div class="row justify-content-md-center">
-            <div class="col-sd-12 border border-dark rounded image">
-                <img src="https://picsum.photos/500/300?random=1">
+            <div class="col-sd-12 feed-content border border-1 bg-white rounded image my-2">
+                <div class="card-title d-flex justify-content-between p-2">
+                    <h5>My first photo</h5>
+                    <p class="card-title-num">12/14</p>
+                </div>
+                <img src="https://picsum.photos/600/400?random=1">
+                <div class="card-description">
+                    <p class="p-2"><strong>23 likes</strong></p>
+                    <p class="px-2">This is my first photo on the feed. This is a ulti line comment for testing
+                        purposes. I am learning Bootstrap to make websites in a simpler way</p>
+                </div>
+                <div class="card-actions d-flex justify-content-between py-2 px-3 align-items-baseline">
+                    <div class="left d-flex justify-content-start align-items-baseline">
+                        <i class="far fa-heart"></i>
+                        <p class="ps-3">Comments...</p>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-sd-12 image">
-                <img src="https://picsum.photos/500/300?random=2">
+
+            <div class="col-sd-12 feed-content border border-1 bg-white rounded image my-2">
+                <div class="card-title d-flex justify-content-between p-2">
+                    <h5>My first photo</h5>
+                    <p class="card-title-num">12/14</p>
+                </div>
+                <img src="https://picsum.photos/600/400?random=2">
+                <div class="card-description">
+                    <p class="p-2"><strong>23 likes</strong></p>
+                    <p class="px-2">This is my first photo on the feed. This is a ulti line comment for testing
+                        purposes. I am learning Bootstrap to make websites in a simpler way</p>
+                </div>
+                <div class="card-actions d-flex justify-content-between py-2 px-3 align-items-baseline">
+                    <div class="left d-flex justify-content-start align-items-baseline">
+                        <i class="far fa-heart"></i>
+                        <p class="ps-3">Comments...</p>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-sd-12 image">
-                <img src="https://picsum.photos/500/300?random=3">
+
+            <div class="col-sd-12 feed-content border border-1 bg-white rounded image my-2">
+                <div class="card-title d-flex justify-content-between p-2">
+                    <h5>My first photo</h5>
+                    <p class="card-title-num">12/14</p>
+                </div>
+                <img src="https://picsum.photos/600/400?random=3">
+                <div class="card-description">
+                    <p class="p-2"><strong>23 likes</strong></p>
+                    <p class="px-2">This is my first photo on the feed. This is a ulti line comment for testing
+                        purposes. I am learning Bootstrap to make websites in a simpler way</p>
+                </div>
+                <div class="card-actions d-flex justify-content-between py-2 px-3 align-items-baseline">
+                    <div class="left d-flex justify-content-start align-items-baseline">
+                        <i class="far fa-heart"></i>
+                        <p class="ps-3">Comments...</p>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-sd-12 image">
-                <img src="https://picsum.photos/500/300?random=4">
+
+            <div class="col-sd-12 feed-content border border-1 bg-white rounded image my-2">
+                <div class="card-title d-flex justify-content-between p-2">
+                    <h5>My first photo</h5>
+                    <p class="card-title-num">12/14</p>
+                </div>
+                <img src="https://picsum.photos/600/400?random=4">
+                <div class="card-description">
+                    <p class="p-2"><strong>23 likes</strong></p>
+                    <p class="px-2">This is my first photo on the feed. This is a ulti line comment for testing
+                        purposes. I am learning Bootstrap to make websites in a simpler way</p>
+                </div>
+                <div class="card-actions d-flex justify-content-between py-2 px-3 align-items-baseline">
+                    <div class="left d-flex justify-content-start align-items-baseline">
+                        <i class="far fa-heart"></i>
+                        <p class="ps-3">Comments...</p>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-sd-12 image">
-                <img src="https://picsum.photos/500/300?random=5">
+
+            <div class="col-sd-12 feed-content border border-1 bg-white rounded image my-2">
+                <div class="card-title d-flex justify-content-between p-2">
+                    <h5>My first photo</h5>
+                    <p class="card-title-num">12/14</p>
+                </div>
+                <img src="https://picsum.photos/600/400?random=5">
+                <div class="card-description">
+                    <p class="p-2"><strong>23 likes</strong></p>
+                    <p class="px-2">This is my first photo on the feed. This is a ulti line comment for testing
+                        purposes. I am learning Bootstrap to make websites in a simpler way</p>
+                </div>
+                <div class="card-actions d-flex justify-content-between py-2 px-3 align-items-baseline">
+                    <div class="left d-flex justify-content-start align-items-baseline">
+                        <i class="far fa-heart"></i>
+                        <p class="ps-3">Comments...</p>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-sd-12 image">
-                <img src="https://picsum.photos/500/300?random=6">
+
+            <div class="col-sd-12 feed-content border border-1 bg-white rounded image my-2">
+                <div class="card-title d-flex justify-content-between p-2">
+                    <h5>My first photo</h5>
+                    <p class="card-title-num">12/14</p>
+                </div>
+                <img src="https://picsum.photos/600/400?random=6">
+                <div class="card-description">
+                    <p class="p-2"><strong>23 likes</strong></p>
+                    <p class="px-2">This is my first photo on the feed. This is a ulti line comment for testing
+                        purposes. I am learning Bootstrap to make websites in a simpler way</p>
+                </div>
+                <div class="card-actions d-flex justify-content-between py-2 px-3 align-items-baseline">
+                    <div class="left d-flex justify-content-start align-items-baseline">
+                        <i class="far fa-heart"></i>
+                        <p class="ps-3">Comments...</p>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
             </div>
-             <div class="col-sd-12 image">
-                <img src="https://picsum.photos/500/300?random=7">
+
+            <div class="col-sd-12 feed-content border border-1 bg-white rounded image my-2">
+                <div class="card-title d-flex justify-content-between p-2">
+                    <h5>My first photo</h5>
+                    <p class="card-title-num">12/14</p>
+                </div>
+                <img src="https://picsum.photos/600/400?random=7">
+                <div class="card-description">
+                    <p class="p-2"><strong>23 likes</strong></p>
+                    <p class="px-2">This is my first photo on the feed. This is a ulti line comment for testing
+                        purposes. I am learning Bootstrap to make websites in a simpler way</p>
+                </div>
+                <div class="card-actions d-flex justify-content-between py-2 px-3 align-items-baseline">
+                    <div class="left d-flex justify-content-start align-items-baseline">
+                        <i class="far fa-heart"></i>
+                        <p class="ps-3">Comments...</p>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-sd-12 image">
-                <img src="https://picsum.photos/500/300?random=8">
+
+            <div class="col-sd-12 feed-content border border-1 bg-white rounded image my-2">
+                <div class="card-title d-flex justify-content-between p-2">
+                    <h5>My first photo</h5>
+                    <p class="card-title-num">12/14</p>
+                </div>
+                <img src="https://picsum.photos/600/400?random=8">
+                <div class="card-description">
+                    <p class="p-2"><strong>23 likes</strong></p>
+                    <p class="px-2">This is my first photo on the feed. This is a ulti line comment for testing
+                        purposes. I am learning Bootstrap to make websites in a simpler way</p>
+                </div>
+                <div class="card-actions d-flex justify-content-between py-2 px-3 align-items-baseline">
+                    <div class="left d-flex justify-content-start align-items-baseline">
+                        <i class="far fa-heart"></i>
+                        <p class="ps-3">Comments...</p>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-sd-12 image">
-                <img src="https://picsum.photos/500/300?random=9">
+            
+            <div class="col-sd-12 feed-content border border-1 bg-white rounded image my-2">
+                <div class="card-title d-flex justify-content-between p-2">
+                    <h5>My first photo</h5>
+                    <p class="card-title-num">12/14</p>
+                </div>
+                <img src="https://picsum.photos/600/400?random=9">
+                <div class="card-description">
+                    <p class="p-2"><strong>23 likes</strong></p>
+                    <p class="px-2">This is my first photo on the feed. This is a ulti line comment for testing
+                        purposes. I am learning Bootstrap to make websites in a simpler way</p>
+                </div>
+                <div class="card-actions d-flex justify-content-between py-2 px-3 align-items-baseline">
+                    <div class="left d-flex justify-content-start align-items-baseline">
+                        <i class="far fa-heart"></i>
+                        <p class="ps-3">Comments...</p>
+                    </div>
+                    <div class="right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 
 

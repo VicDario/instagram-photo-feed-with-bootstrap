@@ -1,5 +1,5 @@
 body {
-    background-color: #9e9e9e;
+    background-color: #cccccc;
 }
 
 .navbar-brand {
@@ -21,4 +21,36 @@ body {
 .modal .modal-body svg {
     width: 30px;
     height: 30px;
+}
+
+.feed {
+    max-width: 600px;
+}
+
+.feed-content {
+    padding: 0;
+}
+
+.card-title h5 {
+    margin-bottom: 0;
+}
+.card-title-num {
+    color: #8c8c8c;
+    margin-bottom: 0;
+}
+.card-description p {
+    font-weight: 400;
+    margin: 0;
+}
+
+.card-actions .left {
+    width: 50%;
+}
+
+.card-actions .left p {
+    color: #919191;
+    margin: 0;
+}
+.card-actions svg {
+    color: #919191
 }
